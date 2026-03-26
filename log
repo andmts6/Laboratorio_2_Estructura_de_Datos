@@ -1,0 +1,19 @@
+Thu Mar 26 07:13:10 PM UTC 2026: 
+ list.c | 12 +++++++++---
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:46:9: error: ‘list’ is a pointer; did you mean to use ‘->’?
+   46 |     list.head =NULL;
+      |         ^
+      |         ->
+list.c:47:9: error: ‘list’ is a pointer; did you mean to use ‘->’?
+   47 |     list.current = 0;
+      |         ^
+      |         ->
+list.c:48:9: error: ‘list’ is a pointer; did you mean to use ‘->’?
+   48 |     list.size = 0;
+      |         ^
+      |         ->
+02e3007
