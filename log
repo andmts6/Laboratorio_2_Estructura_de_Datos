@@ -244,3 +244,17 @@ Thu Mar 26 07:58:31 PM UTC 2026:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 549ca59
+Thu Mar 26 08:00:51 PM UTC 2026: 
+ list.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:50:4: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   50 | if(list->current =NULL) return list->current->data;
+      |    ^~~~
+list.c:51:1: error: control reaches end of non-void function [-Werror=return-type]
+   51 | }
+      | ^
+cc1: all warnings being treated as errors
+0407aab
