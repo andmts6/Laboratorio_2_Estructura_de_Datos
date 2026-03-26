@@ -98,7 +98,7 @@ void * popCurrent(List * list)
 {
     Node *izq = list->current->prev;
     Node *der = list->current->next;
-    Node *aux = list->current->data;
+    void *aux = list->current->data;
     if (izq ==NULL)
     {
         der->prev = NULL;
