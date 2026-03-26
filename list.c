@@ -46,9 +46,9 @@ List * createList()
 
 void * firstList(List * list) 
 {    
-    Node *aux = list->head->data;
+    Node *aux = list->head;
     list->current = aux;
-    return aux;
+    return aux->data;
 }
 
 void * nextList(List * list) {
