@@ -27,3 +27,18 @@ list.c:48:9: error: ‘List’ {aka ‘struct List’} has no member named ‘si
    48 |     list->size = 0;
       |         ^~
 ab8d924
+Thu Mar 26 07:14:28 PM UTC 2026: 
+ list.c | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:39:9: error: ‘List’ {aka ‘struct List’} has no member named ‘size’
+   39 |     list->size = 0;
+      |         ^~
+list.c: In function ‘firstList’:
+list.c:50:1: error: control reaches end of non-void function [-Werror=return-type]
+   50 | }
+      | ^
+cc1: all warnings being treated as errors
+b2c8933
