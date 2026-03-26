@@ -17,3 +17,13 @@ list.c:48:9: error: ‘list’ is a pointer; did you mean to use ‘->’?
       |         ^
       |         ->
 02e3007
+Thu Mar 26 07:13:47 PM UTC 2026: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:48:9: error: ‘List’ {aka ‘struct List’} has no member named ‘size’
+   48 |     list->size = 0;
+      |         ^~
+ab8d924

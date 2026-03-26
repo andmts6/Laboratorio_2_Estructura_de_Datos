@@ -43,9 +43,9 @@ List * createList()
 void * firstList(List * L) 
 {
     List *list = (List*) malloc(sizeof(List));
-    list.head =NULL;
-    list.current = 0;
-    list.size = 0; 
+    list->head =NULL;
+    list->current = 0;
+    list->size = 0; 
     return list;
 }
 
