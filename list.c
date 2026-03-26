@@ -96,14 +96,19 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
     Node *izq = list->current->prev;
-    Node *der = list->current->next;
+    Nodo *der = list->current->next;
+    if (izq != NULL && der != NULL)
+    {
+        izq->next = der;
+        der->prev = izq;
+        free(list->current);
+        list->current = NULL;
+    }
+    else
+    {
+        printf(":)");
+    }
     
-    izq->next = der;
-    der->prev = izq;
-
-    free(list->current);
-    list->current = NULL;
-    return NULL;
 }
 
 void cleanList(List * list) {
