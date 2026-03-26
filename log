@@ -58,3 +58,30 @@ Thu Mar 26 07:16:46 PM UTC 2026:
  tests:  1|5
 total_score: 10/60
 b0e163f
+Thu Mar 26 07:24:50 PM UTC 2026: 
+ list.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:98:5: error: unknown type name ‘Nodo’; did you mean ‘Node’?
+   98 |     Nodo *izq = list->current->prev;
+      |     ^~~~
+      |     Node
+list.c:98:17: error: initialization of ‘int *’ from incompatible pointer type ‘Node *’ [-Wincompatible-pointer-types]
+   98 |     Nodo *izq = list->current->prev;
+      |                 ^~~~
+list.c:99:5: error: unknown type name ‘Nodo’; did you mean ‘Node’?
+   99 |     Nodo *der = list->current->next;
+      |     ^~~~
+      |     Node
+list.c:99:17: error: initialization of ‘int *’ from incompatible pointer type ‘Node *’ [-Wincompatible-pointer-types]
+   99 |     Nodo *der = list->current->next;
+      |                 ^~~~
+list.c:101:8: error: request for member ‘next’ in something not a structure or union
+  101 |     izq->next = der;
+      |        ^~
+list.c:102:8: error: request for member ‘prev’ in something not a structure or union
+  102 |     der->prev = izq;
+      |        ^~
+41fc0c8
