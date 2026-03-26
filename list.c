@@ -35,8 +35,8 @@ List * createList()
 {    
     List *list = (List*) malloc(sizeof(List));
     list->head =NULL;
+    list->tail = NULL; 
     list->current = 0;
-    list->size = 0; 
     return list;
 }
 
