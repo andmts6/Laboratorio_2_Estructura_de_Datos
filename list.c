@@ -96,7 +96,7 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
     Node *izq = list->current->prev;
-    Nodo *der = list->current->next;
+    Node *der = list->current->next;
     if (izq != NULL && der != NULL)
     {
         izq->next = der;
