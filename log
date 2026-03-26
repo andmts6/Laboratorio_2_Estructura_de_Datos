@@ -144,3 +144,14 @@ list.c:97:8: note: declared here
    97 | void * popCurrent(List * list) {
       |        ^~~~~~~~~~
 5002e2d
+Thu Mar 26 07:41:34 PM UTC 2026: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:118:1: error: control reaches end of non-void function [-Werror=return-type]
+  118 | }
+      | ^
+cc1: all warnings being treated as errors
+eaf49d3
