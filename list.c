@@ -104,13 +104,12 @@ void * popCurrent(List * list)
         der->prev = NULL;
         free(list->current);
         list->current = NULL;
-        return aux;
     }
     else if(der ==NULL)
     {
         izq->prev = NULL;
         free(list->current);
-        return aux;
+        list->current = NULL;
     }
     else
     {
