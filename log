@@ -222,3 +222,20 @@ Thu Mar 26 07:57:25 PM UTC 2026:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 fe6d404
+Thu Mar 26 07:58:11 PM UTC 2026: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:51:5: error: ‘return’ with no value, in function returning non-void [-Wreturn-mismatch]
+   51 |     return;
+      |     ^~~~~~
+list.c:47:8: note: declared here
+   47 | void * firstList(List * list)
+      |        ^~~~~~~~~
+list.c:49:11: error: unused variable ‘aux’ [-Werror=unused-variable]
+   49 |     Node *aux = list->head->data;
+      |           ^~~
+cc1: all warnings being treated as errors
+203dbdc
