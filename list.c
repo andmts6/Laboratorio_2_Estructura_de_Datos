@@ -107,7 +107,7 @@ void * popCurrent(List * list)
     else if(der ==NULL)
     {
         list->tail = izq;
-        izq->prev = NULL;
+        izq->next = NULL;
     }
     else
     {
