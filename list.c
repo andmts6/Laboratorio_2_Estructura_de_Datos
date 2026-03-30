@@ -65,6 +65,8 @@ void * nextList(List * list) {
 //   - La segunda función retorna el dato del nodo anterior a current y actualiza el current para que apunte a ese nodo.
 
 void * lastList(List * list) {
+    list->current = list->tail;
+    return list->current->data;
     return NULL;
 }
 
@@ -102,8 +104,6 @@ void pushCurrent(List * list, void * data) {
     Node *dato = createNode(data);
     if(list->current != NULL)
     {    
-        
-        
         dato->next = list->current->next;
         dato->prev = list->current;
         list->current->next = dato;
