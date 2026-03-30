@@ -327,3 +327,16 @@ Sun Mar 29 11:58:40 PM UTC 2026:
  tests:  6|3
 total_score: 30/60
 74b9a56
+Mon Mar 30 12:08:35 AM UTC 2026: 
+ list.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:88:12: error: ‘return’ with a value, in function returning void [-Wreturn-mismatch]
+   88 |     return NULL;
+      |            ^~~~
+list.c:78:6: note: declared here
+   78 | void pushFront(List * list, void * data) {
+      |      ^~~~~~~~~
+7123347
